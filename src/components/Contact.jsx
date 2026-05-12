@@ -85,6 +85,7 @@ export default function Contact() {
               <div>
                 <h3 className="text-2xl font-orbitron font-bold text-slate-900 dark:text-white mb-2">Venue</h3>
                 <p className="text-slate-600 dark:text-gray-300 leading-relaxed max-w-md">
+                  B building, 5th floor, ECE department,<br />
                   CSMSS Chh. Shahu College of Engineering,<br />
                   Kanchanwadi, Paithan Road,<br />
                   Chhatrapati Sambhajinagar, Maharashtra - 431011

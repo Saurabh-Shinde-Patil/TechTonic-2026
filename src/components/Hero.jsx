@@ -24,9 +24,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-pink-600 dark:text-neon-pink font-semibold tracking-widest uppercase mb-4"
+            className="text-pink-600 dark:text-neon-pink font-semibold tracking-widest uppercase mb-4 text-sm md:text-base leading-relaxed"
           >
-            CSMSS Chh. Shahu College of Engineering
+            CSMSS Chh. Shahu College of Engineering<br/>
+            <span className="text-slate-700 dark:text-gray-300">Department of Electronics & Computer Engineering</span>
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -80,7 +81,7 @@ export default function Hero() {
 
 
           <div className="w-full">
-            <h3 className="text-center text-cyan-600 dark:text-neon-cyan font-orbitron mb-2 tracking-widest">Registration Closes In</h3>
+            <h3 className="text-center text-purple-600 dark:text-neon-purple font-orbitron mb-2 tracking-widest">Registration Closes In</h3>
             <CountdownTimer targetDate={targetDate} />
           </div>
         </motion.div>

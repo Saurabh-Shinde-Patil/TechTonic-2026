@@ -129,7 +129,7 @@ export const faqs = [
   },
   {
     question: "Where will the event be conducted?",
-    answer: "The event will be conducted physically at CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar."
+    answer: "The event will be conducted physically at B building 5th floor ECE department CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar."
   }
 ];
 

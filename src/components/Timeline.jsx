@@ -3,7 +3,7 @@ import { timelineEvents } from '../data/siteData';
 
 export default function Timeline() {
   return (
-    <section id="timeline" className="pt-8 pb-16 relative">
+    <section id="timeline" className="pt-8 pb-0 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}

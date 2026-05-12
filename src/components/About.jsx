@@ -21,24 +21,6 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className={`glass-card p-6 flex flex-col items-center text-center border-gray-200 dark:border-white/5 transition-all duration-300 ${feature.border} ${feature.shadow} group`}
-            >
-              <div className={`p-4 rounded-full bg-slate-100 dark:bg-dark-800 mb-4 group-hover:scale-110 transition-transform duration-300 ${feature.color}`}>
-                <feature.icon size={32} />
-              </div>
-              <h3 className="text-xl font-orbitron font-semibold tracking-wide text-slate-800 dark:text-white">{feature.title}</h3>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import About from './components/About';
 import Events from './components/Events';
 import Prizes from './components/Prizes';
 import Timeline from './components/Timeline';
+import KeyHighlights from './components/KeyHighlights';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -44,9 +45,10 @@ function App() {
         <main className="relative z-10">
           <Hero />
           <About />
+          <Timeline />
           <Events />
           <Prizes />
-          <Timeline />
+          <KeyHighlights />
           <Contact />
           <FAQ />
         </main>

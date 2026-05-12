@@ -77,18 +77,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="md:w-1/2 flex flex-col items-center"
         >
-          <div className="glass-card p-6 rounded-2xl border-gray-200 dark:border-neon-pink/30 mb-8 relative overflow-hidden group flex justify-center items-center bg-slate-50/50 dark:bg-white/5 shadow-xl">
-            <div className="absolute inset-0 bg-gradient-to-r from-indigo-100 to-purple-100 dark:from-neon-blue/10 dark:to-neon-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <img 
-              src="/ecesa-logo.png" 
-              alt="ECESA Logo" 
-              className="w-48 md:w-56 rounded-lg object-contain shadow-md dark:shadow-[0_0_30px_rgba(0,243,255,0.2)] transform group-hover:scale-110 transition-transform duration-500"
-              onError={(e) => {
-                e.target.onerror = null; 
-                e.target.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Fallback dummy image
-              }}
-            />
-          </div>
+
           
           <div className="w-full">
             <h3 className="text-center text-cyan-600 dark:text-neon-cyan font-orbitron mb-2 tracking-widest">Registration Closes In</h3>

@@ -13,10 +13,10 @@ export default function Events() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-cyan">
+          <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-neon-blue dark:to-neon-cyan">
             7 Exciting Events
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+          <p className="text-slate-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
             Choose your arena and prove your mettle. Register for multiple events to maximize your chances of winning!
           </p>
         </motion.div>

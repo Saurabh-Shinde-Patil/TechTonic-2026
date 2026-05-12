@@ -30,17 +30,17 @@ export default function EventCard({ event, index }) {
 
       <div className="flex items-center mb-4">
         <div 
-          className="p-3 rounded-xl bg-dark-800 mr-4"
+          className="p-3 rounded-xl bg-slate-100 dark:bg-dark-800 mr-4 transition-colors duration-300"
           style={{ color: event.color, boxShadow: `0 0 10px ${event.color}40` }}
         >
           <event.icon size={28} />
         </div>
-        <h3 className="text-xl font-orbitron font-bold tracking-wide" style={{ textShadow: `0 0 5px ${event.color}80` }}>
+        <h3 className="text-xl font-orbitron font-bold tracking-wide text-slate-800 dark:text-white" style={{ textShadow: `0 0 5px ${event.color}80` }}>
           {event.name}
         </h3>
       </div>
       
-      <p className="text-gray-400 flex-grow mb-6">
+      <p className="text-slate-600 dark:text-gray-400 flex-grow mb-6">
         {event.description}
       </p>
       

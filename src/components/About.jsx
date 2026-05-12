@@ -16,7 +16,7 @@ export default function About() {
             About TECHTONIC 2K26
           </h2>
           <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
-            TECHTONIC 2K26 is a mega technical and fun event organized by the Department of Electronics & Computer Engineering at CSMSS Chhatrapati Shahu College of Engineering.
+            TECHTONIC 2K26 is a mega technical and fun event organized by the Department of Electronics & Computer Engineering at CSMSS Chh. Shahu College of Engineering.
             The event brings together innovation, creativity, AI, strategy, technical skills, and entertainment through exciting competitions designed for students.
           </p>
         </motion.div>

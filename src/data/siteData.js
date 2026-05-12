@@ -129,7 +129,7 @@ export const faqs = [
   },
   {
     question: "Where will the event be conducted?",
-    answer: "The event will be conducted physically at CSMSS Chhatrapati Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar."
+    answer: "The event will be conducted physically at CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar."
   }
 ];
 
@@ -142,4 +142,10 @@ export const contacts = [
   { role: 'IETE ISF Technical Head', name: 'Sagar Susundre', phone: '8830157631' },
   { role: 'Magazine Co-Ordinator', name: 'Jiya Joshi', phone: '9595124123' },
   { role: 'Sports Co-Ordinator', name: 'Rushikesh Puri', phone: '8767120507' }
+];
+
+export const leadership = [
+  { role: 'Chief Guest', name: 'Dr. S. G. Deshmukh', details: 'Administrative Officer, CSMSS Sanstha' },
+  { role: 'Convenor', name: 'Dr. D. L. Bhuyar', details: 'Vice Principal and HOD, ECE Department, CSMSS' },
+  { role: 'Guest of Honour', name: 'Dr. G. B. Dongre', details: 'Principal, CSMSS' }
 ];

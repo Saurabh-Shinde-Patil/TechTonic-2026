@@ -43,8 +43,8 @@ function App() {
         <Events />
         <Prizes />
         <Timeline />
-        <FAQ />
         <Contact />
+        <FAQ />
       </main>
 
       <Footer />

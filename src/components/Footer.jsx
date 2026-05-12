@@ -42,8 +42,11 @@ export default function Footer() {
           <p className="mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} TECHTONIC 2K26. All rights reserved.
           </p>
-          <p className="flex items-center">
-            Designed with <Heart size={16} className="text-neon-pink mx-1 animate-pulse" /> by ECE Department
+          <p className="flex items-center flex-wrap justify-center md:justify-end text-center md:text-right mt-4 md:mt-0 leading-relaxed">
+            Designed with <Heart size={16} className="text-neon-pink mx-1 animate-pulse" /> by 
+            <span className="text-neon-cyan font-semibold ml-1">Saurabh Shinde</span> &amp; 
+            <span className="text-neon-blue font-semibold mx-1">Manthan Kharote</span> 
+            <br className="hidden sm:block md:hidden" />(ECE Department)
           </p>
         </div>
       </div>

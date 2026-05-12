@@ -26,7 +26,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="text-neon-pink font-semibold tracking-widest uppercase mb-4"
           >
-            CSMSS Chhatrapati Shahu College of Engineering
+            CSMSS Chh. Shahu College of Engineering
           </motion.p>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}

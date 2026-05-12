@@ -3,7 +3,7 @@ import { timelineEvents } from '../data/siteData';
 
 export default function Timeline() {
   return (
-    <section id="timeline" className="py-20 relative">
+    <section id="timeline" className="pt-8 pb-16 relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -40,12 +40,12 @@ export default function Timeline() {
 
               {/* Content Card */}
               <div className={`w-5/12 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                <div className={`glass-card p-6 border-t-2 ${event.borderColor} hover:scale-105 transition-transform duration-300`}>
-                  <span className={`inline-block px-3 py-1 rounded-full bg-slate-100 dark:bg-dark-800 text-sm font-bold mb-3 ${event.color}`}>
+                <div className={`glass-card p-3 sm:p-4 md:p-6 border-t-2 ${event.borderColor} hover:scale-105 transition-transform duration-300 overflow-hidden break-words`}>
+                  <span className={`inline-block px-2 py-1 md:px-3 rounded-full bg-slate-100 dark:bg-dark-800 text-xs md:text-sm font-bold mb-2 md:mb-3 ${event.color}`}>
                     {event.date}
                   </span>
-                  <h3 className="text-xl font-orbitron font-semibold mb-2 text-slate-800 dark:text-white">{event.title}</h3>
-                  <p className="text-slate-600 dark:text-gray-400">{event.description}</p>
+                  <h3 className="text-sm sm:text-base md:text-xl font-orbitron font-semibold mb-1 md:mb-2 text-slate-800 dark:text-white leading-tight">{event.title}</h3>
+                  <p className="text-xs sm:text-sm md:text-base text-slate-600 dark:text-gray-400">{event.description}</p>
                 </div>
               </div>
             </motion.div>

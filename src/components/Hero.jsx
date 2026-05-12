@@ -5,7 +5,7 @@ export default function Hero() {
   const targetDate = "2026-05-17T23:59:59"; // 17 May 2026 Midnight
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-[80vh] flex items-center justify-center pt-28 pb-4 overflow-hidden">
       {/* Background Animated Elements */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-300/30 dark:bg-neon-blue/20 rounded-full blur-[100px] animate-pulse-glow"></div>

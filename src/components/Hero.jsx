@@ -20,7 +20,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="md:w-1/2 text-left mb-10 md:mb-0"
         >
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -28,15 +28,15 @@ export default function Hero() {
           >
             CSMSS Chh. Shahu College of Engineering
           </motion.p>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="text-5xl md:text-7xl font-orbitron font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-neon-blue dark:via-neon-purple dark:to-neon-pink mb-4 dark:neon-text-blue"
           >
-            TECHTONIC<br/>2K26
+            TECHTONIC<br />2K26
           </motion.h1>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -55,7 +55,7 @@ export default function Hero() {
             <span className="text-slate-900 dark:text-white font-semibold">18th - 19th May 2026</span>
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
@@ -71,14 +71,14 @@ export default function Hero() {
         </motion.div>
 
         {/* Right Content - Countdown & Poster */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="md:w-1/2 flex flex-col items-center"
         >
 
-          
+
           <div className="w-full">
             <h3 className="text-center text-cyan-600 dark:text-neon-cyan font-orbitron mb-2 tracking-widest">Registration Closes In</h3>
             <CountdownTimer targetDate={targetDate} />

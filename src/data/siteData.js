@@ -145,7 +145,7 @@ export const contacts = [
 ];
 
 export const leadership = [
-  { role: 'Chief Guest', name: 'Dr. S. G. Deshmukh', details: 'Administrative Officer, CSMSS Sanstha' },
-  { role: 'Convenor', name: 'Dr. D. L. Bhuyar', details: 'Vice Principal and HOD, ECE Department, CSMSS' },
-  { role: 'Guest of Honour', name: 'Dr. G. B. Dongre', details: 'Principal, CSMSS' }
+  { role: 'IETE ISF/ ECESA Coordinator', name: 'Prof. G. N. Dhengle', details: '' },
+  { role: 'Vice-Principal & Head ECE Department', name: 'Dr. D. L. Bhuyar', details: '' },
+  { role: 'Principal', name: 'Dr. G. B. Dongre', details: '' }
 ];

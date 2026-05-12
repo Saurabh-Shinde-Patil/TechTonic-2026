@@ -28,29 +28,31 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className={`glass-card p-8 border text-center relative overflow-hidden group ${
-                person.role === 'Convenor' 
+                index === 1 
                   ? 'border-neon-purple/50 shadow-[0_0_25px_rgba(188,19,254,0.3)] md:scale-110 z-10' 
                   : 'border-white/10 hover:border-neon-blue/40'
               }`}
             >
-              {/* Highlight background for Convenor */}
-              {person.role === 'Convenor' && (
+              {/* Highlight background for center person */}
+              {index === 1 && (
                 <div className="absolute inset-0 bg-neon-purple/5 opacity-50 pointer-events-none"></div>
               )}
               
               <div className={`mx-auto w-16 h-16 flex items-center justify-center rounded-full mb-4 ${
-                person.role === 'Convenor' ? 'bg-neon-purple/20 text-neon-purple' : 'bg-neon-blue/20 text-neon-blue'
+                index === 1 ? 'bg-neon-purple/20 text-neon-purple' : 'bg-neon-blue/20 text-neon-blue'
               }`}>
                 <Award size={32} />
               </div>
               
               <h4 className={`text-sm font-bold uppercase tracking-widest mb-2 ${
-                person.role === 'Convenor' ? 'text-neon-purple' : 'text-neon-cyan'
+                index === 1 ? 'text-neon-purple' : 'text-neon-cyan'
               }`}>
                 {person.role}
               </h4>
               <h3 className="text-2xl font-orbitron font-bold text-white mb-3">{person.name}</h3>
-              <p className="text-gray-400 text-sm">{person.details}</p>
+              {person.details && (
+                <p className="text-gray-400 text-sm">{person.details}</p>
+              )}
             </motion.div>
           ))}
         </div>

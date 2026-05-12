@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import CountdownTimer from './CountdownTimer';
 
 export default function Hero() {
-  const targetDate = "2026-05-17T23:59:59"; // 17 May 2026 Midnight
+  const targetDate = "2026-05-15T20:00:00"; // 15 May 2026 8:00 PM
 
   return (
     <section id="home" className="relative min-h-[80vh] flex items-center justify-center pt-28 pb-4 overflow-hidden">

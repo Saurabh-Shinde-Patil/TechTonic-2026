@@ -82,9 +82,9 @@ export const timelineEvents = [
     shadow: 'shadow-[0_0_15px_rgba(0,243,255,0.5)]'
   },
   {
-    date: '17 May 2026',
+    date: '15 May 2026',
     title: 'Registration Deadline',
-    description: 'Last day to register for all events (Midnight).',
+    description: 'Last day to register for all events (till 8 PM).',
     icon: Calendar,
     color: 'text-neon-pink',
     borderColor: 'border-neon-pink',

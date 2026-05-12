@@ -19,7 +19,7 @@ export default function Contact() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {leadership.map((person, index) => (
             <motion.div
               key={index}
@@ -27,29 +27,18 @@ export default function Contact() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className={`glass-card p-8 border text-center relative overflow-hidden group ${
-                index === 1 
-                  ? 'border-neon-purple/50 shadow-[0_0_25px_rgba(188,19,254,0.3)] md:scale-110 z-10' 
-                  : 'border-white/10 hover:border-neon-blue/40'
-              }`}
+              className="glass-card p-6 md:p-8 border border-white/10 hover:border-neon-blue/40 text-center relative overflow-hidden group hover:shadow-[0_0_25px_rgba(0,243,255,0.2)] transition-all duration-300"
             >
-              {/* Highlight background for center person */}
-              {index === 1 && (
-                <div className="absolute inset-0 bg-neon-purple/5 opacity-50 pointer-events-none"></div>
-              )}
+              <div className="absolute inset-0 bg-gradient-to-b from-neon-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
               
-              <div className={`mx-auto w-16 h-16 flex items-center justify-center rounded-full mb-4 ${
-                index === 1 ? 'bg-neon-purple/20 text-neon-purple' : 'bg-neon-blue/20 text-neon-blue'
-              }`}>
+              <div className="mx-auto w-16 h-16 flex items-center justify-center rounded-full mb-4 bg-neon-blue/20 text-neon-blue group-hover:scale-110 transition-transform duration-300">
                 <Award size={32} />
               </div>
               
-              <h4 className={`text-sm font-bold uppercase tracking-widest mb-2 ${
-                index === 1 ? 'text-neon-purple' : 'text-neon-cyan'
-              }`}>
+              <h4 className="text-xs font-bold uppercase tracking-widest mb-2 text-neon-cyan">
                 {person.role}
               </h4>
-              <h3 className="text-2xl font-orbitron font-bold text-white mb-3">{person.name}</h3>
+              <h3 className="text-xl font-orbitron font-bold text-white mb-2">{person.name}</h3>
               {person.details && (
                 <p className="text-gray-400 text-sm">{person.details}</p>
               )}

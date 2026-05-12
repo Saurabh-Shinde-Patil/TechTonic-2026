@@ -145,7 +145,8 @@ export const contacts = [
 ];
 
 export const leadership = [
-  { role: 'IETE ISF/ ECESA Coordinator', name: 'Prof. G. N. Dhengle', details: '' },
-  { role: 'Vice-Principal & Head of ECE Department', name: 'Dr. D. L. Bhuyar', details: '' },
-  { role: 'Principal', name: 'Dr. G. B. Dongre', details: '' }
+  { role: 'Administrative Officer', name: 'Dr. S. G. Deshmukh', details: 'CSMSS Sanstha' },
+  { role: 'Principal', name: 'Dr. G. B. Dongre', details: 'CSMSS Chh. Shahu College of Engineering' },
+  { role: 'Vice-Principal & Head of ECE', name: 'Dr. D. L. Bhuyar', details: '' },
+  { role: 'IETE ISF / ECESA Coordinator', name: 'Prof. G. N. Dhengle', details: '' }
 ];

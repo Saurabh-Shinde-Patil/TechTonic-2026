@@ -27,8 +27,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#home" className="text-2xl font-orbitron font-bold neon-text-blue">
-              TECHTONIC<span className="text-neon-purple neon-text-purple">2K26</span>
+            <a href="#home" className="flex items-center group">
+              <img
+                src="/ecesa-logo.png"
+                alt="ECESA Logo"
+                className="h-8 w-8 mr-3 object-contain rounded-full bg-white p-0.5 border-2 border-neon-blue shadow-[0_0_10px_rgba(0,243,255,0.4)] group-hover:shadow-[0_0_15px_rgba(0,243,255,0.8)] transition-shadow duration-300"
+                onError={(e) => { e.target.style.display = 'none' }}
+              />
+              <span className="text-2xl font-orbitron font-bold neon-text-blue">
+                TECHTONIC<span className="text-neon-purple neon-text-purple">2K26</span>
+              </span>
             </a>
           </div>
 

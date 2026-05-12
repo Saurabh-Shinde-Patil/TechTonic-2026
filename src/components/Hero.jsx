@@ -14,13 +14,13 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col md:flex-row items-center justify-between w-full">
         {/* Left Content */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           className="md:w-1/2 text-left mb-10 md:mb-0"
         >
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -28,15 +28,15 @@ export default function Hero() {
           >
             CSMSS Chh. Shahu College of Engineering
           </motion.p>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
             className="text-5xl md:text-7xl font-orbitron font-black text-transparent bg-clip-text bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink mb-4 neon-text-blue"
           >
-            TECHTONIC<br/>2K26
+            TECHTONIC<br />2K26
           </motion.h1>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -55,7 +55,7 @@ export default function Hero() {
             <span className="text-white font-semibold">18th - 19th May 2026</span>
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
@@ -71,25 +71,25 @@ export default function Hero() {
         </motion.div>
 
         {/* Right Content - Countdown & Poster */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="md:w-1/2 flex flex-col items-center"
         >
-          <div className="glass-card p-6 rounded-2xl border-neon-pink/30 mb-8 relative overflow-hidden group">
+          <div className="glass-card p-6 rounded-2xl border-neon-pink/30 mb-8 relative overflow-hidden group flex justify-center items-center bg-white/5">
             <div className="absolute inset-0 bg-gradient-to-r from-neon-blue/10 to-neon-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <img 
-              src="/src/assets/techtonic-poster.jpg" 
-              alt="Techtonic 2K26 Poster" 
-              className="w-full max-w-sm rounded-lg object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-500"
+              src="/ecesa-logo.png" 
+              alt="ECESA Logo" 
+              className="w-48 md:w-56 rounded-lg object-contain shadow-[0_0_30px_rgba(0,243,255,0.2)] transform group-hover:scale-110 transition-transform duration-500"
               onError={(e) => {
-                e.target.onerror = null; 
+                e.target.onerror = null;
                 e.target.src = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"; // Fallback dummy image
               }}
             />
           </div>
-          
+
           <div className="w-full">
             <h3 className="text-center text-neon-cyan font-orbitron mb-2 tracking-widest">Registration Closes In</h3>
             <CountdownTimer targetDate={targetDate} />

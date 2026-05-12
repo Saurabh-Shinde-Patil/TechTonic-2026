@@ -146,6 +146,6 @@ export const contacts = [
 
 export const leadership = [
   { role: 'IETE ISF/ ECESA Coordinator', name: 'Prof. G. N. Dhengle', details: '' },
-  { role: 'Vice-Principal & Head ECE Department', name: 'Dr. D. L. Bhuyar', details: '' },
+  { role: 'Vice-Principal & Head of ECE Department', name: 'Dr. D. L. Bhuyar', details: '' },
   { role: 'Principal', name: 'Dr. G. B. Dongre', details: '' }
 ];

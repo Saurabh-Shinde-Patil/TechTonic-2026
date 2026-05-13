@@ -12,7 +12,6 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
-import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -70,7 +69,6 @@ function App() {
             </motion.button>
           )}
         </AnimatePresence>
-        <Analytics />
       </div>
     </ThemeProvider>
   );

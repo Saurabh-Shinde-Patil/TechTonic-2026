@@ -5,7 +5,7 @@ import { contacts, leadership } from '../data/siteData';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 relative">
+    <section className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
@@ -47,11 +47,12 @@ export default function Contact() {
         </div>
 
         <motion.div 
+          id="contact"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-16 scroll-mt-24"
         >
           <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-4 text-slate-900 dark:text-white">
             Organizing Committee

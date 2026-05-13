@@ -287,7 +287,8 @@ export const contacts = [
   { role: 'Magazine Co-Ordinator', name: 'Jiya Joshi', phone: '9595124123' },
   { role: 'Magazine Co-Ordinator', name: 'Lakshya Darunte', phone: '8668344898' },
   { role: 'Sports Co-Ordinator', name: 'Rushikesh Puri', phone: '8767120507' },
-  { role: 'IETE Creative-Head', name: 'Ajit Waysal', phone: '9227320704' }
+  { role: 'IETE Creative-Head', name: 'Ajit Waysal', phone: '9227320704' },
+  { role: 'Hostel Representative boys', name: 'Varad Kulkarni', phone: '9146581039' }
 ];
 
 export const leadership = [

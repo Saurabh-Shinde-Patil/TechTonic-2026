@@ -164,7 +164,7 @@ export default function EventDetails() {
                 <CheckCircle className="mr-3 text-green-500" />
                 Rules & Guidelines
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 {event.rules.map((rule, idx) => (
                   <motion.div 
                     key={idx}
@@ -177,6 +177,13 @@ export default function EventDetails() {
                   </motion.div>
                 ))}
               </div>
+              <motion.p 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                className="text-xs italic text-slate-500 dark:text-amber-500/80 mt-4 pl-2 border-l-2 border-amber-500/30"
+              >
+                *Rules and guidelines for events may be modified by the organizers if required during the event.*
+              </motion.p>
             </motion.section>
 
             <motion.section

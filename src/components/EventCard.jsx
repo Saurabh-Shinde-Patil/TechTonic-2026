@@ -128,9 +128,9 @@ export default function EventCard({ event, index }) {
             to={`/event/${event.id}`}
             className="w-full flex items-center justify-between py-4 px-6 rounded-2xl bg-white/5 border border-white/10 text-white font-orbitron font-bold text-xs group/btn hover:bg-white hover:text-black transition-all duration-500"
           >
-            <span className="flex items-center uppercase tracking-widest">
+            <span className="flex items-center uppercase tracking-widest font-black group-hover/btn:text-black transition-colors">
               <Sparkles size={14} className="mr-2 text-yellow-500" />
-              {event.name} Details
+              {event.name}&nbsp;<span className={`${theme.accent} group-hover/btn:text-indigo-900 dark:group-hover/btn:text-indigo-900`}>Details</span>
             </span>
             <ChevronRight size={18} className="group-hover/btn:translate-x-2 transition-transform" />
           </Link>

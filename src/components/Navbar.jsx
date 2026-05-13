@@ -50,7 +50,7 @@ export default function Navbar() {
                 <img
                   src="/ecesa-logo.png"
                   alt="ECESA Logo"
-                  className="h-8 w-8 mr-2 sm:mr-3 object-contain rounded-full bg-white p-0.5 border-2 border-indigo-600 dark:border-neon-blue shadow-[0_0_10px_rgba(0,243,255,0.4)] group-hover:shadow-[0_0_15px_rgba(0,243,255,0.8)] transition-shadow duration-300"
+                  className="h-10 w-10 sm:h-12 sm:w-12 mr-3 sm:mr-4 object-cover rounded-full bg-white p-0 border-2 border-pink-500/30 dark:border-neon-pink/30 shadow-[0_0_15px_rgba(255,0,255,0.2)] group-hover:shadow-[0_0_20px_rgba(255,0,255,0.5)] transition-all duration-300 scale-105"
                 />
                 <span className="text-xl sm:text-2xl font-orbitron font-bold text-slate-900 dark:text-neon-blue dark:neon-text-blue">
                   TECHTONIC<span className="text-red-600 dark:text-neon-purple dark:neon-text-purple">2K26</span>

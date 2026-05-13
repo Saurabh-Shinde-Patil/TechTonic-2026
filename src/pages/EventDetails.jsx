@@ -4,7 +4,7 @@ import { eventData } from '../data/siteData';
 import { 
   ArrowLeft, Calendar, MapPin, Users, Info, 
   CheckCircle, Phone, ExternalLink, Trophy, 
-  Clock, CreditCard, AlertCircle 
+  Clock, CreditCard, AlertCircle, MessageCircle 
 } from 'lucide-react';
 import { useEffect } from 'react';
 
@@ -229,12 +229,24 @@ export default function EventDetails() {
                           <p className="font-bold dark:text-white text-sm uppercase">{coordinator.name}</p>
                           <p className="text-[10px] text-slate-500 dark:text-gray-500 font-bold tracking-widest">{coordinator.role}</p>
                         </div>
-                        <a 
-                          href={`tel:${coordinator.phone}`}
-                          className="p-3 rounded-xl bg-indigo-600 dark:bg-neon-blue text-white dark:text-black shadow-lg shadow-indigo-500/30 hover:scale-110 transition-transform"
-                        >
-                          <Phone size={16} />
-                        </a>
+                        <div className="flex space-x-2">
+                          <a 
+                            href={`https://wa.me/91${coordinator.phone}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-3 rounded-xl bg-green-500 text-white shadow-lg shadow-green-500/30 hover:scale-110 transition-transform"
+                            title="WhatsApp"
+                          >
+                            <MessageCircle size={16} />
+                          </a>
+                          <a 
+                            href={`tel:${coordinator.phone}`}
+                            className="p-3 rounded-xl bg-indigo-600 dark:bg-neon-blue text-white dark:text-black shadow-lg shadow-indigo-500/30 hover:scale-110 transition-transform"
+                            title="Call"
+                          >
+                            <Phone size={16} />
+                          </a>
+                        </div>
                       </motion.div>
                     ))}
                   </div>

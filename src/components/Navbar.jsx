@@ -26,19 +26,31 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center group">
-              <img
-                src="/ecesa-logo.png"
-                alt="ECESA Logo"
-                className="h-8 w-8 mr-3 object-contain rounded-full bg-white p-0.5 border-2 border-neon-blue shadow-[0_0_10px_rgba(0,243,255,0.4)] group-hover:shadow-[0_0_15px_rgba(0,243,255,0.8)] transition-shadow duration-300"
-                onError={(e) => { e.target.style.display = 'none' }}
-              />
-              <span className="text-2xl font-orbitron font-bold neon-text-blue">
-                TECHTONIC<span className="text-neon-purple neon-text-purple">2K26</span>
-              </span>
-            </a>
+          <div className="flex items-center">
+            {/* Mobile menu button (Left side) */}
+            <div className="md:hidden flex items-center mr-2 sm:mr-4">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-slate-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-gray-800 focus:outline-none transition-colors"
+              >
+                {isOpen ? <X className="h-6 w-6 text-pink-500 dark:text-neon-pink" /> : <Menu className="h-6 w-6 text-indigo-600 dark:text-neon-blue" />}
+              </button>
+            </div>
+
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <a href="#home" className="flex items-center group">
+                <img
+                  src="/ecesa-logo.png"
+                  alt="ECESA Logo"
+                  className="h-8 w-8 mr-2 sm:mr-3 object-contain rounded-full bg-white p-0.5 border-2 border-indigo-600 dark:border-neon-blue shadow-[0_0_10px_rgba(0,243,255,0.4)] group-hover:shadow-[0_0_15px_rgba(0,243,255,0.8)] transition-shadow duration-300"
+                  onError={(e) => { e.target.style.display = 'none' }}
+                />
+                <span className="text-xl sm:text-2xl font-orbitron font-bold text-slate-900 dark:text-neon-blue dark:neon-text-blue">
+                  TECHTONIC<span className="text-red-600 dark:text-neon-purple dark:neon-text-purple">2K26</span>
+                </span>
+              </a>
+            </div>
           </div>
 
           {/* Desktop Menu */}
@@ -57,15 +69,9 @@ export default function Navbar() {
             <ThemeToggle />
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-4">
+          {/* Mobile Theme Toggle (Right side) */}
+          <div className="md:hidden flex items-center">
             <ThemeToggle />
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-gray-800 focus:outline-none transition-colors"
-            >
-              {isOpen ? <X className="h-6 w-6 text-pink-500 dark:text-neon-pink" /> : <Menu className="h-6 w-6 text-indigo-600 dark:text-neon-blue" />}
-            </button>
           </div>
         </div>
       </div>

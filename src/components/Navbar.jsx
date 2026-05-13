@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { cn } from '../utils/cn';
@@ -8,6 +9,7 @@ import ThemeToggle from './ThemeToggle';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,11 +19,16 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
   return (
     <nav
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
-        scrolled ? 'bg-white/90 dark:bg-dark-900/80 backdrop-blur-md border-b border-gray-200 dark:border-neon-blue/20 shadow-lg shadow-gray-200/50 dark:shadow-neon-blue/5' : 'bg-transparent'
+        scrolled ? 'bg-white/90 dark:bg-dark-900/80 backdrop-blur-md border-b border-gray-200 dark:border-neon-blue/20 shadow-lg' : 'bg-transparent'
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,17 +46,16 @@ export default function Navbar() {
 
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="#home" className="flex items-center group">
+              <Link to="/" className="flex items-center group">
                 <img
                   src="/ecesa-logo.png"
                   alt="ECESA Logo"
                   className="h-8 w-8 mr-2 sm:mr-3 object-contain rounded-full bg-white p-0.5 border-2 border-indigo-600 dark:border-neon-blue shadow-[0_0_10px_rgba(0,243,255,0.4)] group-hover:shadow-[0_0_15px_rgba(0,243,255,0.8)] transition-shadow duration-300"
-                  onError={(e) => { e.target.style.display = 'none' }}
                 />
                 <span className="text-xl sm:text-2xl font-orbitron font-bold text-slate-900 dark:text-neon-blue dark:neon-text-blue">
                   TECHTONIC<span className="text-red-600 dark:text-neon-purple dark:neon-text-purple">2K26</span>
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 

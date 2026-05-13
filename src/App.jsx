@@ -1,16 +1,11 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Events from './components/Events';
-import Prizes from './components/Prizes';
-import Timeline from './components/Timeline';
-import KeyHighlights from './components/KeyHighlights';
-import FAQ from './components/FAQ';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import EventDetails from './pages/EventDetails';
 import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
@@ -30,47 +25,45 @@ function App() {
   };
 
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-dark-900 text-slate-900 dark:text-white selection:bg-neon-purple/30 selection:text-white transition-colors duration-300">
-        {/* Global Background Elements */}
-        <div className="fixed inset-0 z-0 pointer-events-none hidden dark:block">
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
+    <Router>
+      <ThemeProvider>
+        <div className="min-h-screen bg-white dark:bg-dark-900 text-slate-900 dark:text-white selection:bg-neon-purple/30 selection:text-white transition-colors duration-300">
+          {/* Global Background Elements */}
+          <div className="fixed inset-0 z-0 pointer-events-none hidden dark:block">
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
+          </div>
+          <div className="fixed inset-0 z-0 pointer-events-none block dark:hidden">
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMCwwLDAsMC4wMykiLz48L3N2Zz4=')] opacity-50"></div>
+          </div>
+
+          <Navbar />
+          
+          <main className="relative z-10">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/event/:id" element={<EventDetails />} />
+            </Routes>
+          </main>
+
+          <Footer />
+
+          <AnimatePresence>
+            {showBackToTop && (
+              <motion.button
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0 }}
+                onClick={scrollToTop}
+                className="fixed bottom-8 right-8 p-3 rounded-full bg-indigo-100 dark:bg-neon-blue/20 border border-indigo-500 dark:border-neon-blue text-indigo-700 dark:text-neon-blue backdrop-blur-md shadow-lg dark:shadow-[0_0_15px_rgba(0,243,255,0.4)] hover:bg-indigo-500 dark:hover:bg-neon-blue hover:text-white dark:hover:text-black transition-all duration-300 z-50"
+                aria-label="Back to top"
+              >
+                <ArrowUp size={24} />
+              </motion.button>
+            )}
+          </AnimatePresence>
         </div>
-        <div className="fixed inset-0 z-0 pointer-events-none block dark:hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMCwwLDAsMC4wMykiLz48L3N2Zz4=')] opacity-50"></div>
-        </div>
-
-        <Navbar />
-        
-        <main className="relative z-10">
-          <Hero />
-          <About />
-          <Timeline />
-          <Events />
-          <Prizes />
-          <KeyHighlights />
-          <Contact />
-          <FAQ />
-        </main>
-
-        <Footer />
-
-        <AnimatePresence>
-          {showBackToTop && (
-            <motion.button
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0 }}
-              onClick={scrollToTop}
-              className="fixed bottom-8 right-8 p-3 rounded-full bg-indigo-100 dark:bg-neon-blue/20 border border-indigo-500 dark:border-neon-blue text-indigo-700 dark:text-neon-blue backdrop-blur-md shadow-lg dark:shadow-[0_0_15px_rgba(0,243,255,0.4)] hover:bg-indigo-500 dark:hover:bg-neon-blue hover:text-white dark:hover:text-black transition-all duration-300 z-50"
-              aria-label="Back to top"
-            >
-              <ArrowUp size={24} />
-            </motion.button>
-          )}
-        </AnimatePresence>
-      </div>
-    </ThemeProvider>
+      </ThemeProvider>
+    </Router>
   );
 }
 

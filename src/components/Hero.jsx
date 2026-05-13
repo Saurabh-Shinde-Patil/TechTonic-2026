@@ -51,7 +51,7 @@ export default function Hero() {
             transition={{ delay: 0.8 }}
             className="text-slate-500 dark:text-gray-400 max-w-lg mb-8"
           >
-            Organized by the Department of Electronics & Computer Engineering.
+            A National Level Technical Event Organized by the Department of Electronics & Computer Engineering.
             <br />
             <span className="text-slate-900 dark:text-white font-semibold">18th - 19th May 2026</span>
           </motion.p>
@@ -69,7 +69,7 @@ export default function Hero() {
               Explore Events
             </a>
             <a href="https://drive.google.com/file/d/1dWLbijP1Jo10UpbeD9H7BMmB51aFGPkd/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-transparent border-2 border-pink-600 dark:border-neon-pink text-pink-600 dark:text-neon-pink font-bold rounded-lg hover:bg-pink-600 dark:hover:bg-neon-pink hover:text-white dark:hover:text-black transition-all duration-300 shadow-sm dark:shadow-[0_0_15px_rgba(255,0,255,0.4)] hover:shadow-lg dark:hover:shadow-[0_0_25px_rgba(255,0,255,0.8)]">
-              Tecnical Event Concept Handbook
+              Event Concept Handbook
             </a>
           </motion.div>
         </motion.div>

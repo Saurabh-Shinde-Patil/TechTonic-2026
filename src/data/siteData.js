@@ -1,13 +1,13 @@
 import { Lightbulb, Cpu, Palette, Gamepad2, Network, Trophy, Image as ImageIcon, MessageSquare, Bot, Film, Moon, Triangle, Calendar, Flag, Rocket, CheckCircle2 } from 'lucide-react';
 
 export const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Events', href: '#events' },
-  { name: 'Prizes', href: '#prizes' },
-  { name: 'Timeline', href: '#timeline' },
-  { name: 'FAQ', href: '#faq' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/#home' },
+  { name: 'About', href: '/#about' },
+  { name: 'Events', href: '/#events' },
+  { name: 'Prizes', href: '/#prizes' },
+  { name: 'Timeline', href: '/#timeline' },
+  { name: 'FAQ', href: '/#faq' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 export const features = [
@@ -21,53 +21,197 @@ export const features = [
 
 export const eventData = [
   {
-    name: 'Project Competition',
-    description: 'Showcase your innovative projects and technical skills to industry experts.',
+    id: 'project-x',
+    name: 'PROJECT X',
+    category: 'innovation',
+    description: 'Where Innovation Meets Reality! Showcase your AI, Automation, Software, Hardware, and IoT projects.',
+    detailedDescription: 'Got an innovative project? Built something creative, technical, or futuristic? Now it’s time to showcase your talent on the biggest tech stage! PROJECT X is our flagship project competition where ideas turn into reality.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSdddPMyC20wan-Pn4yO4YF7iVctJrpn-udY-kk1ep3T8B5UZA/viewform?usp=publish-editor',
+    poster: '/posters/projectx.png',
     icon: Lightbulb,
-    color: '#00f3ff' // neon-blue
+    color: '#00f3ff',
+    rules: [
+      'Must present a working prototype or detailed model.',
+      'Technical documentation (Report) must be submitted.',
+      '5 minutes for presentation + 2 minutes for Q&A.',
+      'Judges decision will be final.'
+    ],
+    eligibility: 'Engineering Students (Diploma/Degree) of any branch.',
+    teamSize: 'Max 3 members.',
+    registrationFee: '₹50',
+    registrationDeadline: '15 May 2026 till 8:00 PM',
+    venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
+    coordinators: [
+      { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
+      { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' },
+      { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
+    ]
   },
   {
-    name: 'Poster Competition',
-    description: 'Present your ideas creatively through impactful posters based on Sustainable Development Goals.',
+    id: 'canvas-x',
+    name: 'CANVAS X',
+    category: 'creative',
+    description: 'Design the Future Through Creativity! A poster competition themed around the 17 Sustainable Development Goals (SDGs).',
+    detailedDescription: 'Your ideas can inspire change… Your art can create awareness… Your poster can speak louder than words! CANVAS X invites you to express your vision for a better tomorrow through powerful visual storytelling.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSdfFXVrC8r2-vT2wnbbz9xXg0hMa7lhWJpouKsbyH0mycGGRw/viewform?usp=publish-editor',
+    poster: '/posters/canvasX.png',
     icon: ImageIcon,
-    color: '#ff00ff' // neon-pink
+    color: '#ff00ff',
+    rules: [
+      "Theme: 17 Sustainable Development Goals (SDGs) - any 1 out of 17.",
+      'Poster should be creative and original.',
+      'All necessary materials must be brought by the participants.',
+      'Time limit for the competition is 2 hours.'
+    ],
+    eligibility: 'Open to all college students.',
+    teamSize: 'Max 2 members.',
+    registrationFee: '₹50',
+    registrationDeadline: '15 May 2026 till 8:00 PM',
+    venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
+    coordinators: [
+      { name: 'Mansi Raut', role: 'Vice President', phone: '8767674742' },
+      { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' },
+      { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
+    ]
   },
   {
-    name: 'Pitch Craft (Ideathon)',
-    description: 'Pitch innovative ideas and problem-solving approaches in a high-stakes environment.',
+    id: 'pitch-craft',
+    name: 'PITCH CRAFT',
+    category: 'business',
+    description: 'Turn Your Vision Into Impact! Pitch your startup ideas, innovative solutions, and game-changing concepts.',
+    detailedDescription: 'Got a startup idea, innovative solution, or game-changing concept? Now’s your chance to pitch it like a true entrepreneur! Pitch Craft is where you turn your vision into impact.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSfBd-pKrl9mxa4PXNLUCBQrtK50rLrY12nvfD3B4OFSEmhigQ/viewform?usp=dialog',
+    poster: '/posters/pitch_craft.png',
     icon: MessageSquare,
-    color: '#08f7fe' // neon-cyan
+    color: '#08f7fe',
+    rules: [
+      'Presentation deck (PPT) is mandatory.',
+      'Pitching time: 5 minutes.',
+      'Q&A session: 3 minutes.',
+      'Evaluation on confidence, innovation, and feasibility.'
+    ],
+    eligibility: 'Aspiring entrepreneurs and students from any department.',
+    teamSize: 'Max 3 members.',
+    registrationFee: '₹100',
+    registrationDeadline: '15 May 2026 till 8:00 PM',
+    venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
+    coordinators: [
+      { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
+      { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' },
+      { name: 'Vaishnavi Mohite', role: 'Treasurer', phone: '7743962627' },
+      { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' }
+    ]
   },
   {
-    name: 'AI Prompt Battle',
-    description: 'Compete in the ultimate AI creativity and prompting challenge. Test your prompt engineering skills.',
+    id: 'prompt-x',
+    name: 'PROMPT X',
+    category: 'tech',
+    description: 'The Smarter Your Prompt, The Stronger Your Power! Test your creativity and logic in the AI prompt engineering battle.',
+    detailedDescription: 'Think you can command AI better than anyone else? It’s time to test your creativity, logic, and prompt engineering skills in the ultimate AI showdown! Prompt X is the battleground for the smarter mind.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSckKC-nKLiUWK8oKYgMCCy8dFfRadkKd951dmUAR8mVLVSbJA/viewform?usp=publish-editor',
+    poster: '/posters/promptx.png',
     icon: Bot,
-    color: '#bc13fe' // neon-purple
+    color: '#bc13fe',
+    rules: [
+      'Real-time prompt generation battles.',
+      'Participants must use the AI platform provided.',
+      'Outputs evaluated on accuracy, creativity, and speed.',
+      'Internet usage restricted to only designated sites.'
+    ],
+    eligibility: 'All tech enthusiasts and students.',
+    teamSize: 'Individual (01 member).',
+    registrationFee: '₹50',
+    registrationDeadline: '15 May 2026 till 8:00 PM',
+    venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
+    coordinators: [
+      { name: 'Prerika Kshirsagar', role: 'Technical Event Head', phone: '9834302520' },
+      { name: 'Jiya Joshi', role: 'Magazine Co-ordinator', phone: '9595124123' },
+      { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' },
+      { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
+    ]
   },
   {
-    name: 'Reel Making Competition',
-    description: 'Create impactful reels based on SDGs and spread awareness creatively.',
+    id: 'dark-room-cricket',
+    name: 'DARK ROOM CRICKET',
+    category: 'sports',
+    description: 'Where Vision Ends, The Real Game Begins! Experience the thrill of fast-paced cricket in a glowing, dark atmosphere.',
+    detailedDescription: 'Think cricket is easy? Now imagine playing it in complete darkness… where every sound matters, every move counts, and every second keeps your heart racing! Dark Room Cricket is where vision ends and the real game begins.',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdtcZXwaQns7e3MSpdm_NWD3Oe67T_g4S2eXg77f0P0CvrKrA/viewform?usp=publish-editor',
+    poster: '/posters/darkroom.png',
+    rulebook: '/Rulebook_Cricket.pdf',
+    icon: Moon,
+    color: '#00ff66',
+    rules: [
+      'Only For Boys.',
+      '2 Overs per inning.',
+      'Glowing ball and stumps will be used.',
+      'Played in a strictly controlled dark environment.',
+      'Strictly individual skill & team coordination required.'
+    ],
+    eligibility: 'Only for Boys.',
+    teamSize: 'Max 5 members.',
+    registrationFee: '₹200',
+    registrationDeadline: '15 May 2026 till 8:00 PM',
+    venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
+    coordinators: [
+      { name: 'Rushi Puri', role: 'Sports Co-ordinator', phone: '8767120507' },
+      { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' },
+      { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' }
+    ]
+  },
+  {
+    id: 'squid-game',
+    name: 'SQUID GAME',
+    category: 'gaming',
+    description: 'Only The Smartest & Fastest Will Survive! Intense mini-games, mind-blowing challenges, and suspense at every step.',
+    detailedDescription: 'Can you survive the pressure, strategy, mind games, and unexpected twists? Squid Game Challenge presents intense mini-games where only the smartest and fastest will survive.',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSc9d7AAgcdk9IeP8phfNuVDHULhzF8k8WQ0fDFQ1tfI6Uodcg/viewform?usp=publish-editor',
+    poster: '/posters/squid_game.png',
+    icon: Triangle,
+    color: '#ff003c',
+    rules: [
+      '3 Rounds of mysterious challenges.',
+      'Elimination on failure to complete a task.',
+      'Speed and focus are crucial.',
+      'Game rules will be explained before each round.'
+    ],
+    eligibility: 'Open for all college students.',
+    teamSize: 'Max 4 members.',
+    registrationFee: '₹200',
+    registrationDeadline: '15 May 2026 till 8:00 PM',
+    venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
+    coordinators: [
+      { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
+      { name: 'Mansi Raut', role: 'Vice President', phone: '8767674742' },
+      { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' },
+      { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
+    ]
+  },
+  {
+    id: 'reel-making',
+    name: 'REEL MAKING',
+    category: 'creative',
+    description: 'Create impactful reels based on SDGs and spread awareness creatively through visual storytelling.',
+    detailedDescription: 'Unleash your creativity and video editing skills! Create impactful short reels based on Sustainable Development Goals (SDGs) and inspire the world through your lens.',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSe-HQYsOX-immUGPjl7twNPfBGriyWkjK3-QLf62RK-E6EjOQ/viewform?usp=publish-editor',
     icon: Film,
-    color: '#ff3366' // custom neon red/pink
-  },
-  {
-    name: 'Dark Room Cricket',
-    description: 'Experience cricket like never before! A thrilling match in complete darkness. (Only for boys)',
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSdtcZXwaQns7e3MSpdm_NWD3Oe67T_g4S2eXg77f0P0CvrKrA/viewform?usp=publish-editor',
-    icon: Moon,
-    color: '#00ff66' // neon green
-  },
-  {
-    name: 'Squid Game Challenge',
-    description: 'Thrilling rounds, strategy, and survival awaits! Are you ready to play?',
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSc9d7AAgcdk9IeP8phfNuVDHULhzF8k8WQ0fDFQ1tfI6Uodcg/viewform?usp=publish-editor',
-    icon: Triangle,
-    color: '#ff003c' // squid game pink/red
+    color: '#ff3366',
+    rules: [
+      'Topic: On 17 SDGs (Sustainable Development Goals).',
+      'Duration: 30 to 60 seconds.',
+      'Original content only.',
+      'Submission via Google Form or social media link.'
+    ],
+    eligibility: 'Open to all.',
+    teamSize: 'Max 3 members.',
+    registrationFee: '₹50',
+    registrationDeadline: '15 May 2026 till 8:00 PM',
+    venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
+    coordinators: [
+      { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
+      { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' },
+      { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' }
+    ]
   }
 ];
 

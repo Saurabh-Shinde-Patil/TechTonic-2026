@@ -71,20 +71,21 @@ export default function EventDetails() {
             alt={event.name}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 md:p-12">
-            <motion.h1 
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="text-4xl md:text-7xl font-orbitron font-black text-white mb-4 uppercase tracking-tighter"
-              style={{ textShadow: `0 0 30px ${event.color}80` }}
-            >
-              {event.name}
-            </motion.h1>
-            <p className="text-white/80 text-lg md:text-xl max-w-2xl font-medium mb-6">
-              {event.description}
-            </p>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-8 md:p-12">
           </div>
+        </motion.div>
+
+        {/* Event Title */}
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="mb-12"
+        >
+          <h1 className="text-4xl md:text-6xl font-orbitron font-black text-slate-900 dark:text-white uppercase tracking-tighter">
+            {event.name}
+          </h1>
+          <div className="w-24 h-2 bg-indigo-600 dark:bg-neon-blue mt-4 rounded-full"></div>
         </motion.div>
 
         {/* Quick Info Grid */}

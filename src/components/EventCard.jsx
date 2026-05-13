@@ -130,7 +130,7 @@ export default function EventCard({ event, index }) {
           >
             <span className="flex items-center uppercase tracking-widest">
               <Sparkles size={14} className="mr-2 text-yellow-500" />
-              Explore {event.name}
+              {event.name} Details
             </span>
             <ChevronRight size={18} className="group-hover/btn:translate-x-2 transition-transform" />
           </Link>

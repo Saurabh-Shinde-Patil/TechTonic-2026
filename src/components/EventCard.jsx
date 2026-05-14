@@ -95,24 +95,28 @@ export default function EventCard({ event, index }) {
           >
             <event.icon size={32} strokeWidth={2.5} />
           </div>
-          <div className="flex flex-col items-end">
-            <span className={`text-[10px] font-orbitron font-black uppercase tracking-[0.2em] ${theme.accent} mb-1`}>
-              {event.category}
-            </span>
-            <div className="flex space-x-2">
-              {event.rulebook && (
-                <a 
-                  href={event.rulebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-white/5 border border-white/10 text-white/40 hover:text-white transition-colors"
-                  title="View Rulebook"
-                >
-                  <FileText size={16} />
-                </a>
-              )}
+            <div className="flex flex-col items-end">
+              <span className={`text-[10px] font-orbitron font-black uppercase tracking-[0.2em] ${theme.accent} mb-1`}>
+                {event.category}
+              </span>
+              <div className="flex space-x-2 mt-2">
+                {event.rulebook && (
+                  <a 
+                    href={event.rulebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg bg-white/5 border border-white/10 text-white/40 hover:text-white transition-colors"
+                    title="View Rulebook"
+                  >
+                    <FileText size={16} />
+                  </a>
+                )}
+                <div className="py-1 px-3 rounded-full bg-white/5 border border-white/10 flex items-center space-x-2">
+                  <span className="text-[9px] font-bold text-gray-400 uppercase tracking-tighter">Closes:</span>
+                  <span className="text-[10px] font-black text-white">{event.registrationDeadline.split(' till')[0]}</span>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
         
         <h3 className="text-2xl font-orbitron font-black text-white mb-4 tracking-tighter leading-tight group-hover:translate-x-2 transition-transform duration-500">
@@ -123,6 +127,11 @@ export default function EventCard({ event, index }) {
           {event.description}
         </p>
         
+        <div className="flex items-center justify-between mb-6 p-4 rounded-xl bg-white/5 border border-white/10">
+          <span className="text-xs font-orbitron font-bold text-gray-400 uppercase tracking-widest">Entry Fee</span>
+          <span className={`text-lg font-orbitron font-black ${theme.accent}`}>{event.registrationFee}</span>
+        </div>
+
         <div className="space-y-4 mt-auto">
           <Link 
             to={`/event/${event.id}`}

@@ -1,5 +1,12 @@
 import { Lightbulb, Cpu, Palette, Gamepad2, Network, Trophy, Image as ImageIcon, MessageSquare, Bot, Film, Moon, Triangle, Calendar, Flag, Rocket, CheckCircle2 } from 'lucide-react';
 
+export const GLOBAL_DEADLINE = {
+  date: '15 May 2026',
+  time: '8:00 PM',
+  full: '15 May 2026 till 8:00 PM',
+  timer: '2026-05-15T20:00:00'
+};
+
 export const navLinks = [
   { name: 'Home', href: '/#home' },
   { name: 'About', href: '/#about' },
@@ -39,7 +46,7 @@ export const eventData = [
     eligibility: 'Engineering Students (Diploma/Degree) of any branch.',
     teamSize: 'Max 3 members.',
     registrationFee: '₹50',
-    registrationDeadline: '15 May 2026 till 8:00 PM',
+    registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
     coordinators: [
       { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
@@ -66,7 +73,7 @@ export const eventData = [
     eligibility: 'Open to all college students.',
     teamSize: 'Max 2 members.',
     registrationFee: '₹50',
-    registrationDeadline: '15 May 2026 till 8:00 PM',
+    registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
     coordinators: [
       { name: 'Mansi Raut', role: 'Vice President', phone: '8767674742' },
@@ -93,7 +100,7 @@ export const eventData = [
     eligibility: 'Aspiring entrepreneurs and students from any department.',
     teamSize: 'Max 3 members.',
     registrationFee: '₹100',
-    registrationDeadline: '15 May 2026 till 8:00 PM',
+    registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
     coordinators: [
       { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
@@ -121,7 +128,7 @@ export const eventData = [
     eligibility: 'All tech enthusiasts and students.',
     teamSize: 'Individual (01 member).',
     registrationFee: '₹50',
-    registrationDeadline: '15 May 2026 till 8:00 PM',
+    registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
     coordinators: [
       { name: 'Prerika Kshirsagar', role: 'Technical Event Head', phone: '9834302520' },
@@ -151,7 +158,7 @@ export const eventData = [
     eligibility: 'Only for Boys.',
     teamSize: 'Max 5 members.',
     registrationFee: '₹200',
-    registrationDeadline: '15 May 2026 till 8:00 PM',
+    registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
     coordinators: [
       { name: 'Rushi Puri', role: 'Sports Co-ordinator', phone: '8767120507' },
@@ -178,7 +185,7 @@ export const eventData = [
     eligibility: 'Open for all college students.',
     teamSize: 'Max 4 members.',
     registrationFee: '₹200',
-    registrationDeadline: '15 May 2026 till 8:00 PM',
+    registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
     coordinators: [
       { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
@@ -226,9 +233,9 @@ export const timelineEvents = [
     shadow: 'shadow-[0_0_15px_rgba(0,243,255,0.5)]'
   },
   {
-    date: '15 May 2026',
+    date: GLOBAL_DEADLINE.date,
     title: 'Registration Deadline',
-    description: 'Last day to register for all events (till 8 PM).',
+    description: `Last day to register for all events (till ${GLOBAL_DEADLINE.time}).`,
     icon: Calendar,
     color: 'text-neon-pink',
     borderColor: 'border-neon-pink',

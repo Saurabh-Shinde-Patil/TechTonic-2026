@@ -135,11 +135,25 @@ export default function EventCard({ event, index }) {
         <div className="space-y-4 mt-auto">
           <Link 
             to={`/event/${event.id}`}
-            className="w-full flex items-center justify-between py-4 px-6 rounded-2xl bg-white/5 border border-white/10 text-white font-orbitron font-bold text-xs group/btn hover:bg-white hover:text-black transition-all duration-500"
+            className="w-full flex items-center justify-between py-4 px-6 rounded-2xl bg-transparent border-2 font-orbitron font-bold text-xs group/btn transition-all duration-500 shadow-lg"
+            style={{ 
+              borderColor: event.color,
+              color: event.color,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = event.color;
+              e.currentTarget.style.color = '#000';
+              e.currentTarget.style.boxShadow = `0 0 30px ${event.color}60`;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+              e.currentTarget.style.color = event.color;
+              e.currentTarget.style.boxShadow = 'none';
+            }}
           >
-            <span className="flex items-center uppercase tracking-widest font-black group-hover/btn:text-black transition-colors">
-              <Sparkles size={14} className="mr-2 text-yellow-500" />
-              {event.name}&nbsp;<span className={`${theme.accent} group-hover/btn:text-indigo-900 dark:group-hover/btn:text-indigo-900`}>Details</span>
+            <span className="flex items-center uppercase tracking-widest font-black">
+              <Sparkles size={14} className="mr-2 text-yellow-500 group-hover/btn:text-black transition-colors" />
+              {event.name}&nbsp;<span>Details</span>
             </span>
             <ChevronRight size={18} className="group-hover/btn:translate-x-2 transition-transform" />
           </Link>

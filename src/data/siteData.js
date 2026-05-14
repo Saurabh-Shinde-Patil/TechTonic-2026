@@ -286,7 +286,9 @@ export const contacts = [
   { role: 'IETE ISF Technical Head', name: 'Sagar Susundre', phone: '8830157631' },
   { role: 'Magazine Co-Ordinator', name: 'Jiya Joshi', phone: '9595124123' },
   { role: 'Magazine Co-Ordinator', name: 'Lakshya Darunte', phone: '8668344898' },
-  { role: 'Sports Co-Ordinator', name: 'Rushikesh Puri', phone: '8767120507' },
+  { role: 'Sports Head', name: 'Rushikesh Puri', phone: '8767120507' },
+  { role: 'Sports Co-Ordinator', name: 'Sandip Satpute', phone: '7887949346' },
+  { role: 'Technical Event Head', name: 'Pradeep Kale', phone: '123456' },
   { role: 'IETE Creative-Head', name: 'Ajit Waysal', phone: '9227320704' },
   { role: 'Hostel Representative boys', name: 'Varad Kulkarni', phone: '9146581039' }
 ];

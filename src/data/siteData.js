@@ -22,7 +22,7 @@ export const features = [
 export const eventData = [
   {
     id: 'project-x',
-    name: 'PROJECT X',
+    name: 'Project Competition',
     category: 'innovation',
     description: 'Where Innovation Meets Reality! Showcase your AI, Automation, Software, Hardware, and IoT projects.',
     detailedDescription: 'Got an innovative project? Built something creative, technical, or futuristic? Now it’s time to showcase your talent on the biggest tech stage! PROJECT X is our flagship project competition where ideas turn into reality.',
@@ -49,7 +49,7 @@ export const eventData = [
   },
   {
     id: 'canvas-x',
-    name: 'CANVAS X',
+    name: 'Poster Competition',
     category: 'creative',
     description: 'Design the Future Through Creativity! A poster competition themed around the 17 Sustainable Development Goals (SDGs).',
     detailedDescription: 'Your ideas can inspire change… Your art can create awareness… Your poster can speak louder than words! CANVAS X invites you to express your vision for a better tomorrow through powerful visual storytelling.',
@@ -76,7 +76,7 @@ export const eventData = [
   },
   {
     id: 'pitch-craft',
-    name: 'PITCH CRAFT',
+    name: 'Pitching Competition',
     category: 'business',
     description: 'Turn Your Vision Into Impact! Pitch your startup ideas, innovative solutions, and game-changing concepts.',
     detailedDescription: 'Got a startup idea, innovative solution, or game-changing concept? Now’s your chance to pitch it like a true entrepreneur! Pitch Craft is where you turn your vision into impact.',
@@ -104,7 +104,7 @@ export const eventData = [
   },
   {
     id: 'prompt-x',
-    name: 'PROMPT X',
+    name: 'AI-Prompt Battle',
     category: 'tech',
     description: 'The Smarter Your Prompt, The Stronger Your Power! Test your creativity and logic in the AI prompt engineering battle.',
     detailedDescription: 'Think you can command AI better than anyone else? It’s time to test your creativity, logic, and prompt engineering skills in the ultimate AI showdown! Prompt X is the battleground for the smarter mind.',
@@ -132,7 +132,7 @@ export const eventData = [
   },
   {
     id: 'dark-room-cricket',
-    name: 'DARK ROOM CRICKET',
+    name: 'Dark Room Cricket',
     category: 'sports',
     description: 'Where Vision Ends, The Real Game Begins! Experience the thrill of fast-paced cricket in a glowing, dark atmosphere.',
     detailedDescription: 'Think cricket is easy? Now imagine playing it in complete darkness… where every sound matters, every move counts, and every second keeps your heart racing! Dark Room Cricket is where vision ends and the real game begins.',
@@ -161,7 +161,7 @@ export const eventData = [
   },
   {
     id: 'squid-game',
-    name: 'SQUID GAME',
+    name: 'Squid Game',
     category: 'gaming',
     description: 'Only The Smartest & Fastest Will Survive! Intense mini-games, mind-blowing challenges, and suspense at every step.',
     detailedDescription: 'Can you survive the pressure, strategy, mind games, and unexpected twists? Squid Game Challenge presents intense mini-games where only the smartest and fastest will survive.',
@@ -189,7 +189,7 @@ export const eventData = [
   },
   {
     id: 'reel-making',
-    name: 'REEL MAKING',
+    name: 'Reel Competition',
     category: 'creative',
     description: 'Create impactful reels based on SDGs and spread awareness creatively through visual storytelling.',
     detailedDescription: 'Unleash your creativity and video editing skills! Create impactful short reels based on Sustainable Development Goals (SDGs) and inspire the world through your lens.',

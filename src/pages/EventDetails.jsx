@@ -111,7 +111,7 @@ export default function EventDetails() {
             </div>
             <div>
               <p className="text-xs text-slate-500 dark:text-gray-500 uppercase tracking-wider font-bold">Deadline</p>
-              <p className="font-orbitron font-bold dark:text-white text-sm">15 May, 8 PM</p>
+              <p className="font-orbitron font-bold dark:text-white text-sm">{event.registrationDeadline}</p>
             </div>
           </motion.div>
 

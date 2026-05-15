@@ -1,10 +1,10 @@
 import { Lightbulb, Cpu, Palette, Gamepad2, Network, Trophy, Image as ImageIcon, MessageSquare, Bot, Film, Moon, Triangle, Calendar, Flag, Rocket, CheckCircle2 } from 'lucide-react';
 
 export const GLOBAL_DEADLINE = {
-  date: '15 May 2026',
+  date: '16 May 2026',
   time: '8:00 PM',
-  full: '15 May 2026 till 8:00 PM',
-  timer: '2026-05-15T20:00:00'
+  full: '16 May 2026 till 8:00 PM',
+  timer: '2026-05-16T20:00:00'
 };
 
 export const navLinks = [

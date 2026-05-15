@@ -84,7 +84,15 @@ export default function Hero() {
         >
 
 
-          <div className="w-full">
+          <div className="w-full flex flex-col items-center">
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              className="mb-4 py-2 px-6 rounded-full bg-red-500/10 border border-red-500/50 text-red-500 font-orbitron font-bold text-sm uppercase tracking-widest animate-pulse shadow-[0_0_15px_rgba(239,68,68,0.3)] flex items-center"
+            > 
+            {/* registration date extended message  */}
+              <span className="mr-2">🔥</span> Registration Date Extended!
+            </motion.div>
             <h3 className="text-center text-purple-600 dark:text-neon-purple font-orbitron mb-2 tracking-widest">Registration Closes In</h3>
             <CountdownTimer targetDate={targetDate} />
           </div>

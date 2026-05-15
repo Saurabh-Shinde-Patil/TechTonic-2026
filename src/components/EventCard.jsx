@@ -127,9 +127,15 @@ export default function EventCard({ event, index }) {
           {event.description}
         </p>
         
-        <div className="flex items-center justify-between mb-6 p-4 rounded-xl bg-white/5 border border-white/10">
-          <span className="text-xs font-orbitron font-bold text-gray-400 uppercase tracking-widest">Entry Fee</span>
-          <span className={`text-lg font-orbitron font-black ${theme.accent}`}>{event.registrationFee}</span>
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex flex-col items-center">
+            <span className="text-[8px] font-orbitron font-bold text-white uppercase tracking-widest mb-1">Entry Fee</span>
+            <span className={`text-sm font-orbitron font-black ${theme.accent}`}>{event.registrationFee}</span>
+          </div>
+          <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex flex-col items-center">
+            <span className="text-[8px] font-orbitron font-bold text-white uppercase tracking-widest mb-1">Max Team Members</span>
+            <span className="text-sm font-orbitron font-black text-white">{event.teamSize}</span>
+          </div>
         </div>
 
         <div className="space-y-4 mt-auto">

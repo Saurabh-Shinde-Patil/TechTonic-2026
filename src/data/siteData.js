@@ -44,7 +44,7 @@ export const eventData = [
       'Judges decision will be final.'
     ],
     eligibility: 'Engineering Students (Diploma/Degree) of any branch.',
-    teamSize: 'Max 3 members.',
+    teamSize: 'Max 3',
     registrationFee: '₹50',
     registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
@@ -71,7 +71,7 @@ export const eventData = [
       'Time limit for the competition is 2 hours.'
     ],
     eligibility: 'Open to all college students.',
-    teamSize: 'Max 2 members.',
+    teamSize: 'Max 2',
     registrationFee: '₹50',
     registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
@@ -98,7 +98,7 @@ export const eventData = [
       'Evaluation on confidence, innovation, and feasibility.'
     ],
     eligibility: 'Aspiring entrepreneurs and students from any department.',
-    teamSize: 'Max 3 members.',
+    teamSize: 'Max 3',
     registrationFee: '₹100',
     registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
@@ -126,7 +126,7 @@ export const eventData = [
       'Internet usage restricted to only designated sites.'
     ],
     eligibility: 'All tech enthusiasts and students.',
-    teamSize: 'Individual (01 member).',
+    teamSize: 'Solo',
     registrationFee: '₹50',
     registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
@@ -156,7 +156,7 @@ export const eventData = [
       'Strictly individual skill & team coordination required.'
     ],
     eligibility: 'Only for Boys.',
-    teamSize: 'Max 5 members.',
+    teamSize: 'Max 5',
     registrationFee: '₹200',
     registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
@@ -183,7 +183,7 @@ export const eventData = [
       'Game rules will be explained before each round.'
     ],
     eligibility: 'Open for all college students.',
-    teamSize: 'Max 4 members.',
+    teamSize: 'Max 4',
     registrationFee: '₹200',
     registrationDeadline: GLOBAL_DEADLINE.full,
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',
@@ -210,7 +210,7 @@ export const eventData = [
       'Submission via Google Form or social media link.'
     ],
     eligibility: 'Open to all.',
-    teamSize: 'Max 3 members.',
+    teamSize: 'Max 3',
     registrationFee: '₹50',
     registrationDeadline: '15 May 2026 till 8:00 PM',
     venue: 'B building, 5th floor, ECE department, CSMSS Chh. Shahu College of Engineering, Kanchanwadi, Paithan Road, Chhatrapati Sambhajinagar, Maharashtra - 431011',

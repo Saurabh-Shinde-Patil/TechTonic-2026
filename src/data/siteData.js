@@ -243,8 +243,14 @@ export const timelineEvents = [
   },
   {
     date: '18 May 2026',
-    title: 'Event Begins',
-    description: 'Day 1 of TECHTONIC 2K26 kicks off!',
+    title: 'Event Begins (Day 1)',
+    description: 'Inauguration & Main Competitions',
+    flow: [
+      '10:15 AM - Inauguration Ceremony',
+      '11:15 AM - Project, Poster & AI-Prompt',
+      '01:00 PM - Reel & Pitching Competitions',
+      '11:15 AM - 05:00 PM: Dark Room Cricket'
+    ],
     icon: Rocket,
     color: 'text-neon-purple',
     borderColor: 'border-neon-purple',
@@ -252,8 +258,13 @@ export const timelineEvents = [
   },
   {
     date: '19 May 2026',
-    title: 'Final Day & Prize Distribution',
-    description: 'Concluding day with valedictory function.',
+    title: 'Final Day (Day 2)',
+    description: 'Squid Game & Prize Distribution',
+    flow: [
+      '10:00 AM - Squid Game Competition',
+      '03:00 PM - Prize Distribution',
+      '03:30 PM - Vote of Thanks & Feedback'
+    ],
     icon: CheckCircle2,
     color: 'text-neon-cyan',
     borderColor: 'border-neon-cyan',

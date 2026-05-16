@@ -35,10 +35,10 @@ export default function Contact() {
                 <Award size={32} />
               </div>
               
+              <h3 className="text-xl font-orbitron font-bold text-slate-800 dark:text-white mb-2">{person.name}</h3>
               <h4 className="text-xs font-bold uppercase tracking-widest mb-2 text-cyan-600 dark:text-neon-cyan">
                 {person.role}
               </h4>
-              <h3 className="text-xl font-orbitron font-bold text-slate-800 dark:text-white mb-2">{person.name}</h3>
               {person.details && (
                 <p className="text-slate-600 dark:text-gray-400 text-sm">{person.details}</p>
               )}

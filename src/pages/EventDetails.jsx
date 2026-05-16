@@ -1,10 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { eventData } from '../data/siteData';
+import { eventData, GLOBAL_DEADLINE } from '../data/siteData';
 import { 
   ArrowLeft, Calendar, MapPin, Users, Info, 
   CheckCircle, Phone, ExternalLink, Trophy, 
-  Clock, CreditCard, AlertCircle, MessageCircle 
+  Clock, CreditCard, AlertCircle, MessageCircle,
+  Sparkles
 } from 'lucide-react';
 import { useEffect } from 'react';
 
@@ -112,6 +113,11 @@ export default function EventDetails() {
             <div>
               <p className="text-xs text-slate-500 dark:text-gray-500 uppercase tracking-wider font-bold">Deadline</p>
               <p className="font-orbitron font-bold dark:text-white text-sm">{event.registrationDeadline}</p>
+              {GLOBAL_DEADLINE.showSpotEntry && (
+                <div className="mt-2 py-0.5 px-2 rounded-md bg-green-500/10 border border-green-500/20 text-green-600 dark:text-green-400 text-[9px] font-black uppercase tracking-tighter animate-pulse inline-block">
+                  Spot Entry Available
+                </div>
+              )}
             </div>
           </motion.div>
 

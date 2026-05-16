@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ExternalLink, Sparkles, FileText, ChevronRight } from 'lucide-react';
+import { GLOBAL_DEADLINE } from '../data/siteData';
 
 export default function EventCard({ event, index }) {
   // Theme styling based on category
@@ -139,6 +140,11 @@ export default function EventCard({ event, index }) {
         </div>
 
         <div className="space-y-4 mt-auto">
+          {GLOBAL_DEADLINE.showSpotEntry && (
+            <div className="py-2 text-center rounded-lg bg-green-500/10 border border-green-500/20 text-green-500 font-orbitron font-black text-[10px] uppercase tracking-widest">
+              Spot Entry Available
+            </div>
+          )}
           <Link 
             to={`/event/${event.id}`}
             className="w-full flex items-center justify-between py-4 px-6 rounded-2xl bg-transparent border-2 font-orbitron font-bold text-xs group/btn transition-all duration-500 shadow-lg"

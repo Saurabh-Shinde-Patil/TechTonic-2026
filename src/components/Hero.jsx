@@ -95,6 +95,15 @@ export default function Hero() {
             </motion.div>
             <h3 className="text-center text-purple-600 dark:text-neon-purple font-orbitron mb-2 tracking-widest">Registration Closes In</h3>
             <CountdownTimer targetDate={targetDate} />
+            {GLOBAL_DEADLINE.showSpotEntry && (
+              <motion.div 
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mt-6 py-2 px-6 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-600 dark:text-neon-blue font-orbitron font-bold text-xs uppercase tracking-[0.2em] animate-bounce"
+              >
+                📍 Spot Entry Also Available
+              </motion.div>
+            )}
           </div>
         </motion.div>
       </div>

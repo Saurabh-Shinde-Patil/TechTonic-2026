@@ -5,7 +5,7 @@ export const GLOBAL_DEADLINE = {
   time: '11:59 PM',
   full: '17 May 2026 till 11:59 PM',
   timer: '2026-05-17T23:59:00',
-  showSpotEntry: false // Set to true to show "Spot Entry Also Available"
+  showSpotEntry: true // Set to true to show "Spot Entry Also Available"
 };
 
 export const navLinks = [

@@ -99,7 +99,7 @@ export default function Hero() {
               <motion.div 
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="mt-6 py-2 px-6 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-600 dark:text-neon-blue font-orbitron font-bold text-xs uppercase tracking-[0.2em] animate-bounce"
+                className="mt-6 py-2 px-6 rounded-xl bg-red-500/10 border border-red-500/30 text-red-600 dark:text-red-500 font-orbitron font-bold text-xs uppercase tracking-[0.2em] animate-bounce"
               >
                 📍 Spot Entry Also Available
               </motion.div>

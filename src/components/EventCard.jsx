@@ -141,7 +141,7 @@ export default function EventCard({ event, index }) {
 
         <div className="space-y-4 mt-auto">
           {GLOBAL_DEADLINE.showSpotEntry && (
-            <div className="py-2 text-center rounded-lg bg-green-500/10 border border-green-500/20 text-green-500 font-orbitron font-black text-[10px] uppercase tracking-widest">
+            <div className="py-2 text-center rounded-lg bg-red-500/10 border border-red-500/20 text-red-500 font-orbitron font-black text-[10px] uppercase tracking-widest">
               Spot Entry Available
             </div>
           )}

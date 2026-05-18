@@ -95,11 +95,20 @@ export default function Hero() {
             </motion.div>
             <h3 className="text-center text-purple-600 dark:text-neon-purple font-orbitron mb-2 tracking-widest">Registration Closes In</h3>
             <CountdownTimer targetDate={targetDate} />
+            {GLOBAL_DEADLINE.isRegistrationClosed && (
+              <motion.div 
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mt-6 py-2 px-6 rounded-xl bg-red-500/20 border border-red-500 text-red-600 dark:text-red-500 font-orbitron font-bold text-xl uppercase tracking-[0.2em]"
+              >
+                Registration Closed
+              </motion.div>
+            )}
             {GLOBAL_DEADLINE.showSpotEntry && (
               <motion.div 
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="mt-6 py-2 px-6 rounded-xl bg-red-400/10 border border-red-500/30 text-red-600 dark:text-red-500 font-orbitron font-bold text-xl uppercase tracking-[0.2em] animate-bounce"
+                className={`${GLOBAL_DEADLINE.isRegistrationClosed ? 'mt-4' : 'mt-6'} py-2 px-6 rounded-xl bg-red-400/10 border border-red-500/30 text-red-600 dark:text-red-500 font-orbitron font-bold text-xl uppercase tracking-[0.2em] animate-bounce`}
               >
                 📍 Spot Entry Also Available
               </motion.div>

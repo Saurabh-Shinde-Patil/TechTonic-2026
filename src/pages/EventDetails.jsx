@@ -113,8 +113,13 @@ export default function EventDetails() {
             <div>
               <p className="text-xs text-slate-500 dark:text-gray-500 uppercase tracking-wider font-bold">Deadline</p>
               <p className="font-orbitron font-bold dark:text-white text-sm">{event.registrationDeadline}</p>
+              {GLOBAL_DEADLINE.isRegistrationClosed && (
+                <div className="mt-2 py-0.5 px-2 rounded-md bg-red-500/20 border border-red-500 text-red-600 dark:text-red-400 text-[9px] font-black uppercase tracking-tighter inline-block mr-2">
+                  Registration Closed
+                </div>
+              )}
               {GLOBAL_DEADLINE.showSpotEntry && (
-                <div className="mt-2 py-0.5 px-2 rounded-md bg-green-500/10 border border-green-500/20 text-green-600 dark:text-green-400 text-[9px] font-black uppercase tracking-tighter animate-pulse inline-block">
+                <div className={`${GLOBAL_DEADLINE.isRegistrationClosed ? 'mt-2' : 'mt-2'} py-0.5 px-2 rounded-md bg-red-500/10 border border-red-500/20 text-red-600 dark:text-red-400 text-[9px] font-black uppercase tracking-tighter animate-pulse inline-block`}>
                   Spot Entry Available
                 </div>
               )}

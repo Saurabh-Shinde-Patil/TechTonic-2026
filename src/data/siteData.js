@@ -1,11 +1,12 @@
 import { Lightbulb, Cpu, Palette, Gamepad2, Network, Trophy, Image as ImageIcon, MessageSquare, Bot, Film, Moon, Triangle, Calendar, Flag, Rocket, CheckCircle2, Award, Medal } from 'lucide-react';
 
 export const GLOBAL_DEADLINE = {
-  date: '16 May 2026',
-  time: '8:00 PM',
-  full: '16 May 2026 till 8:00 PM',
-  timer: '2026-05-16T20:00:00',
-  showSpotEntry: false // Set to true to show "Spot Entry Also Available"
+  date: '17 May 2026',
+  time: '11:59 PM',
+  full: '17 May 2026 till 11:59 PM',
+  timer: '2026-05-17T23:59:00',
+  isRegistrationClosed: true, // Set to true to show "Registration Closed"
+  showSpotEntry: false // Set to true to show "Spot Entry Also Availabl"
 };
 
 // Event completion status

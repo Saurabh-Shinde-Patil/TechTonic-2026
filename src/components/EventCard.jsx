@@ -140,8 +140,13 @@ export default function EventCard({ event, index }) {
         </div>
 
         <div className="space-y-4 mt-auto">
+          {GLOBAL_DEADLINE.isRegistrationClosed && (
+            <div className="py-2 text-center rounded-lg bg-red-500/20 border border-red-500 text-red-500 font-orbitron font-black text-[12px] uppercase tracking-widest">
+              Registration Closed
+            </div>
+          )}
           {GLOBAL_DEADLINE.showSpotEntry && (
-            <div className="py-2 text-center rounded-lg bg-green-500/10 border border-green-500/20 text-green-500 font-orbitron font-black text-[10px] uppercase tracking-widest">
+            <div className="py-2 text-center rounded-lg bg-red-500/10 border border-red-500/20 text-red-500 font-orbitron font-black text-[10px] uppercase tracking-widest">
               Spot Entry Available
             </div>
           )}

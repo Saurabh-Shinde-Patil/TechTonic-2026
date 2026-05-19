@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import EventDetails from './pages/EventDetails';
+import Winners from './pages/Winners';
 import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/event/:id" element={<EventDetails />} />
+              <Route path="/winners" element={<Winners />} />
             </Routes>
           </main>
 

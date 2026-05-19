@@ -44,7 +44,7 @@ export default function Hero() {
             transition={{ delay: 0.6 }}
             className="text-xl md:text-3xl text-slate-600 dark:text-gray-300 font-light italic mb-6"
           >
-            “Unleash the Ultimate Tech Arena”
+            "Unleash the Ultimate Tech Arena"
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}

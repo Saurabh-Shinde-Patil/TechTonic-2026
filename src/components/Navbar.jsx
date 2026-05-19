@@ -63,13 +63,23 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8 ml-10">
             <div className="flex items-baseline space-x-8">
               {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-slate-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium hover:dark:neon-text-blue"
-                >
-                  {link.name}
-                </a>
+                link.href.startsWith('/#') ? (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="text-slate-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-neon-blue transition-colors px-3 py-2 rounded-md text-sm font-medium hover:dark:neon-text-blue"
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors px-3 py-2 rounded-md text-sm font-bold hover:dark:neon-text-blue"
+                  >
+                    {link.name}
+                  </Link>
+                )
               ))}
             </div>
             <ThemeToggle />
@@ -92,14 +102,25 @@ export default function Navbar() {
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-slate-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-neon-blue block px-3 py-2 rounded-md text-base font-medium"
-              >
-                {link.name}
-              </a>
+              link.href.startsWith('/#') ? (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-slate-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-neon-blue block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 block px-3 py-2 rounded-md text-base font-bold"
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
           </div>
         </motion.div>

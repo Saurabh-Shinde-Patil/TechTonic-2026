@@ -1,4 +1,4 @@
-import { Lightbulb, Cpu, Palette, Gamepad2, Network, Trophy, Image as ImageIcon, MessageSquare, Bot, Film, Moon, Triangle, Calendar, Flag, Rocket, CheckCircle2 } from 'lucide-react';
+import { Lightbulb, Cpu, Palette, Gamepad2, Network, Trophy, Image as ImageIcon, MessageSquare, Bot, Film, Moon, Triangle, Calendar, Flag, Rocket, CheckCircle2, Award, Medal } from 'lucide-react';
 
 export const GLOBAL_DEADLINE = {
   date: '16 May 2026',
@@ -8,14 +8,16 @@ export const GLOBAL_DEADLINE = {
   showSpotEntry: false // Set to true to show "Spot Entry Also Available"
 };
 
+// Event completion status
+export const EVENT_STATUS = {
+  isCompleted: true,
+  marathiMessage: 'कार्यक्रम संपला आहे पुढच्या वर्षी भेटूया, धन्यवाद सहभागी झाल्याबद्दल.',
+  englishMessage: 'The event has concluded. See you next year, thank you for participating!',
+};
+
 export const navLinks = [
   { name: 'Home', href: '/#home' },
-  { name: 'About', href: '/#about' },
-  { name: 'Events', href: '/#events' },
-  { name: 'Prizes', href: '/#prizes' },
-  { name: 'Timeline', href: '/#timeline' },
-  { name: 'FAQ', href: '/#faq' },
-  { name: 'Contact', href: '/#contact' },
+  { name: '🏆 Winners', href: '/winners' },
 ];
 
 export const features = [
@@ -53,7 +55,12 @@ export const eventData = [
       { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
       { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' },
       { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
-    ]
+    ],
+    winners: {
+      first: { teamName: 'Pixels Hub', college: 'CSMSS CSCOE', members: ['Manthan Kharote', 'Saurabh Shinde', 'Mohit Bhombe'] },
+      second: { teamName: 'Tech Titans', college: 'CSMSS CSCOE', members: ['Aditya Shinde'] },
+      third: { teamName: 'Team Rapidash', college: 'Gramin Technical and Management Campus, Nanded', members: ['Abhay Tak'] }
+    }
   },
   {
     id: 'canvas-x',
@@ -80,7 +87,12 @@ export const eventData = [
       { name: 'Mansi Raut', role: 'Vice President', phone: '8767674742' },
       { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' },
       { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
-    ]
+    ],
+    winners: {
+      first: { members: ['Shreya Jadhav'], college: 'CSMSS CSCOE' },
+      second: { members: ['Prachi Balu Kharat'], college: 'CSMSS CSCOE' },
+      third: { members: ['Purva Dabhade'], college: 'CSMSS CSCOE' }
+    }
   },
   {
     id: 'pitch-craft',
@@ -108,7 +120,12 @@ export const eventData = [
       { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' },
       { name: 'Vaishnavi Mohite', role: 'Treasurer', phone: '7743962627' },
       { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' }
-    ]
+    ],
+    winners: {
+      first: { members: ['Aniket Tambe'], college: 'MIT' },
+      second: { teamName: 'Zerobytes', college: 'Sharadchandra Pawar College Of Engineering, Otur', members: ['Rajendra Jadhav'] },
+      third: { teamName: 'Shield', members: ['Pushkar Sarda'] }
+    }
   },
   {
     id: 'prompt-x',
@@ -136,7 +153,12 @@ export const eventData = [
       { name: 'Jiya Joshi', role: 'Magazine Co-ordinator', phone: '9595124123' },
       { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' },
       { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
-    ]
+    ],
+    winners: {
+      first: { members: ['Om Dhavalanpure'] },
+      second: { members: ['Sayyam Kachhot', 'Aditya Chavan'], note: 'Joint Runner-Up' },
+      third: { members: ['Sarvesh Sanjay Jewalikar'] }
+    }
   },
   {
     id: 'dark-room-cricket',
@@ -165,7 +187,11 @@ export const eventData = [
       { name: 'Rushi Puri', role: 'Sports Co-ordinator', phone: '8767120507' },
       { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' },
       { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' }
-    ]
+    ],
+    winners: {
+      first: { teamName: 'Team Loosers', college: 'CSMSS CSCOE', members: ['Sandip Satpute'] },
+      second: { teamName: "Kshatriya's", college: 'CSMSS CSCOE', members: ['Aditya Shinde'] }
+    }
   },
   {
     id: 'squid-game',
@@ -193,7 +219,12 @@ export const eventData = [
       { name: 'Mansi Raut', role: 'Vice President', phone: '8767674742' },
       { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' },
       { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
-    ]
+    ],
+    winners: {
+      first: { teamName: 'Warriors', college: 'CSMSS CSCOE', members: ['Sandip Satpute'] },
+      second: { teamName: 'Ignite Coders', college: 'CSMSS CSCOE', members: ['Sakshi Chobe'] },
+      third: { note: 'Appreciation to all remaining participants!' }
+    }
   },
   {
     id: 'reel-making',
@@ -219,7 +250,12 @@ export const eventData = [
       { name: 'Dhanashree Ghanwat', role: 'President', phone: '9403323347' },
       { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' },
       { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' }
-    ]
+    ],
+    winners: {
+      first: { teamName: 'Swayamsevak Foundation', college: 'CSMSS CSCOE', members: ['Prithviraj Phate', 'Narendra Bambarde', 'Rohan Chavan'] },
+      second: { teamName: 'FusionX Engineers', college: 'CSMSS CSCOE', members: ['Silvi Yeole'] },
+      third: { teamName: 'H Syndicate', members: ['Harshada Kunturwar'] }
+    }
   }
 ];
 

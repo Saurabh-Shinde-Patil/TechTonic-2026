@@ -1,13 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Timeline from '../components/Timeline';
-import Events from '../components/Events';
-import Prizes from '../components/Prizes';
-import KeyHighlights from '../components/KeyHighlights';
-import Contact from '../components/Contact';
-import FAQ from '../components/FAQ';
+import EventOverBanner from '../components/EventOverBanner';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -33,14 +26,7 @@ export default function Home() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Hero />
-      <About />
-      <Timeline />
-      <Events />
-      <Prizes />
-      <KeyHighlights />
-      <Contact />
-      <FAQ />
+      <EventOverBanner />
     </motion.div>
   );
 }

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Sparkles, FileText, ChevronRight } from 'lucide-react';
-import { GLOBAL_DEADLINE } from '../data/siteData';
+import { ExternalLink, Sparkles, FileText, ChevronRight, Trophy } from 'lucide-react';
+import { GLOBAL_DEADLINE, EVENT_STATUS } from '../data/siteData';
 
 export default function EventCard({ event, index }) {
   // Theme styling based on category
@@ -170,29 +170,39 @@ export default function EventCard({ event, index }) {
             <ChevronRight size={18} className="group-hover/btn:translate-x-2 transition-transform" />
           </Link>
 
-          <a 
-            href={event.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full flex items-center justify-center py-4 rounded-2xl bg-transparent border-2 font-orbitron font-black text-xs tracking-widest transition-all duration-500 shadow-lg"
-            style={{ 
-              borderColor: event.color,
-              color: event.color,
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = event.color;
-              e.currentTarget.style.color = '#000';
-              e.currentTarget.style.boxShadow = `0 0 30px ${event.color}60`;
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'transparent';
-              e.currentTarget.style.color = event.color;
-              e.currentTarget.style.boxShadow = 'none';
-            }}
-          >
-            REGISTER NOW
-            <ExternalLink size={14} className="ml-2" />
-          </a>
+          {EVENT_STATUS.isCompleted ? (
+            <Link 
+              to="/winners"
+              className="w-full flex items-center justify-center py-4 rounded-2xl bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border-2 border-amber-400/50 font-orbitron font-black text-xs tracking-widest text-amber-500 hover:from-amber-500 hover:to-yellow-400 hover:text-black transition-all duration-500 shadow-lg hover:shadow-[0_0_30px_rgba(251,191,36,0.4)]"
+            >
+              <Trophy size={16} className="mr-2" />
+              🏆 SEE WINNERS
+            </Link>
+          ) : (
+            <a 
+              href={event.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center py-4 rounded-2xl bg-transparent border-2 font-orbitron font-black text-xs tracking-widest transition-all duration-500 shadow-lg"
+              style={{ 
+                borderColor: event.color,
+                color: event.color,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = event.color;
+                e.currentTarget.style.color = '#000';
+                e.currentTarget.style.boxShadow = `0 0 30px ${event.color}60`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.color = event.color;
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            >
+              REGISTER NOW
+              <ExternalLink size={14} className="ml-2" />
+            </a>
+          )}
         </div>
       </div>
     </motion.div>

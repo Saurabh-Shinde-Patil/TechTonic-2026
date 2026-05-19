@@ -111,7 +111,7 @@ export default function EventOverBanner() {
       {/* Developer Credit - pinned to bottom */}
       <div className="absolute bottom-4 left-0 right-0 z-10">
         <p className="flex items-center flex-wrap justify-center text-center text-xs text-slate-500 dark:text-gray-500 leading-relaxed gap-1">
-          Designed with <Heart className="w-3 h-3 text-pink-600 dark:text-neon-pink mx-0.5 animate-pulse" fill="currentColor" /> by
+          Designed and Developed by
           <a href="https://www.linkedin.com/in/saurabh-shinde-110437280" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-cyan-100/80 dark:bg-neon-cyan/10 text-cyan-700 dark:text-neon-cyan font-semibold hover:bg-cyan-200 dark:hover:bg-neon-cyan/20 hover:shadow-[0_0_12px_rgba(8,247,254,0.4)] transition-all duration-300 cursor-pointer">
             <LinkedinIcon size={12} />
             Saurabh Shinde

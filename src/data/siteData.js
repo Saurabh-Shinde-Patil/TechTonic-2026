@@ -190,8 +190,8 @@ export const eventData = [
       { name: 'Sagar Susundre', role: 'Event Head', phone: '8830157631' }
     ],
     winners: {
-      first: { teamName: 'Team Loosers', college: 'CSMSS CSCOE', members: ['Sandip Satpute'] },
-      second: { teamName: "Kshatriya's", college: 'CSMSS CSCOE', members: ['Aditya Shinde'] }
+      first: { teamName: 'Team Loosers', college: 'CSMSS CSCOE', memberRole: 'Team Captain', members: ['Sandip Satpute'] },
+      second: { teamName: "Kshatriya's", college: 'CSMSS CSCOE', memberRole: 'Team Captain', members: ['Aditya Shinde'] }
     }
   },
   {
@@ -222,8 +222,8 @@ export const eventData = [
       { name: 'Ganesh Joshi', role: 'Event Manager', phone: '9422837178' }
     ],
     winners: {
-      first: { teamName: 'Warriors', college: 'CSMSS CSCOE', members: ['Sandip Satpute'] },
-      second: { teamName: 'Ignite Coders', college: 'CSMSS CSCOE', members: ['Sakshi Chobe'] },
+      first: { teamName: 'Warriors', college: 'CSMSS CSCOE', memberRole: 'Team Captain', members: ['Sandip Satpute'] },
+      second: { teamName: 'Ignite Coders', college: 'CSMSS CSCOE', memberRole: 'Team Captain', members: ['Sakshi Chobe'] },
       third: { note: 'Appreciation to all remaining participants!' }
     }
   },

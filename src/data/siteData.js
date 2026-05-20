@@ -223,7 +223,7 @@ export const eventData = [
     ],
     winners: {
       first: { teamName: 'Warriors', college: 'CSMSS CSCOE', memberRole: 'Team Captain', members: ['Sandip Satpute', 'Saurabh Shinde', 'Manthan Kharote', 'Gajanan', 'Rushikesh Puri'] },
-      second: { teamName: 'Ignite Coders', college: 'CSMSS CSCOE', memberRole: 'Team Captain', members: ['Sakshi Chobe'] },
+      second: { teamName: '', college: 'CSMSS CSCOE', memberRole: 'Team Captain', members: [''] },
       third: { note: 'Appreciation to all remaining participants!' }
     }
   },
